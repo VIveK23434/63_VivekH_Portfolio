@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Vivek H - S7 Computer Science & Engineering student at Mar Baselios College of Engineering and Technology. Specializing in Cybersecurity, IoT, and Full-Stack Development.">
+  <meta name="author" content="Vivek H">
+  <title>Vivek H | Portfolio - S7 CSE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Dynamic Welcome Banner (Persisted via sessionStorage) -->
+  <div id="greeting-banner" class="greeting-banner">
+    <div class="banner-content">
+      <span id="greeting-text">👋 Welcome to Vivek H's Portfolio!</span>
+      <button id="close-banner" aria-label="Close Announcement">&times;</button>
+    </div>
+  </div>
+
+  <!-- Sticky Semantic Header -->
+  <header>
+    <a href="#hero" class="logo">
+      <span class="logo-symbol">&lt;/&gt;</span> Vivek H <span class="roll-badge">#63</span>
+    </a>
+    
+    <nav aria-label="Primary Navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#experience" class="nav-item">Experience</a></li>
+        <li><a href="#certifications" class="nav-item">Certifications</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    
+    <!-- Hero / Banner Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-image-wrapper">
+          <img src="images/profile.jpg" alt="Vivek H - Profile Picture" class="profile-img">
+          <div class="status-indicator">
+            <span class="status-dot"></span> Open to Opportunities
+          </div>
+        </div>
+
+        <div class="hero-text">
+          <div class="badge-pill">B.Tech Computer Science &amp; Engineering</div>
+          <h1>Hi, I'm <span class="highlight">Vivek H</span></h1>
+          <p class="tagline">S7 CSE Student at MBCET | Aspiring Cybersecurity Specialist &amp; Full-Stack IoT Developer</p>
+          <p class="hero-subtext">Passionate about architecting risk-adaptive security frameworks, IoT cloud integrations, and robust web applications.</p>
+          
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects &darr;</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="resume.pdf" download class="btn btn-accent" title="Download Vivek's Resume">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+              Resume PDF
+            </a>
+          </div>
+
+          <!-- Social Hyperlinks -->
+          <div class="social-links">
+            <a href="https://github.com/VIveK23434" target="_blank" rel="noopener noreferrer" class="social-chip" title="GitHub Profile">
+              <span>GitHub</span> &rarr;
+            </a>
+            <a href="https://www.linkedin.com/in/vivek-h-87a626291/" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn Profile">
+              <span>LinkedIn</span> &rarr;
+            </a>
+            <a href="https://tryhackme.com/p/Vivekhemand" target="_blank" rel="noopener noreferrer" class="social-chip" title="TryHackMe Profile">
+              <span>TryHackMe</span> &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="content-section">
+      <div class="section-header">
+        <span class="section-subtitle">Get To Know Me</span>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>Professional Profile</h3>
+          <p>I am a motivated Computer Science and Engineering student at <strong>Mar Baselios College of Engineering and Technology (Autonomous)</strong>, Thiruvananthapuram, maintaining a CGPA of <strong>6.83/10</strong>.</p>
+          <p>I hold strong interests in <strong>Cyber Security, Artificial Intelligence, IoT Systems, and Web Technologies</strong>. Certified in AWS Generative AI Foundations, I actively engage in technical workshops, IEEE professional tracks, and hands-on vulnerability assessments.</p>
+        </article>
+
+        <article class="about-card">
+          <h3>Personal Details &amp; Contact Highlights</h3>
+          <ul class="detail-list">
+            <li><strong>Location:</strong> Kowdiar, Thiruvananthapuram, Kerala, India - 695003</li>
+            <li><strong>Degree:</strong> B.Tech in CSE (Batch 2023 - 2027)</li>
+            <li><strong>Primary Email:</strong> <a href="mailto:vivekh.b23cs1263@mbcet.ac.in">vivekh.b23cs1263@mbcet.ac.in</a></li>
+            <li><strong>Alternate Email:</strong> <a href="mailto:vivekhemand@gmail.com">vivekhemand@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+919539550610">+91 95395 50610</a></li>
+            <li><strong>Languages:</strong> English, Malayalam</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section (Showcasing 3 List Types: ul, ol, dl) -->
+    <section id="skills" class="content-section">
+      <div class="section-header">
+        <span class="section-subtitle">Technical Proficiency</span>
+        <h2>Skills &amp; Learning Path</h2>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- 1. Unordered List (ul) for Technical Tools & Languages -->
+        <article class="skill-card">
+          <div class="card-icon">&#9881;</div>
+          <h3>Technical Tools &amp; Languages</h3>
+          <p class="card-desc">Core languages, frameworks, and security analysis tools:</p>
+          <ul class="styled-ul">
+            <li><span class="bullet-dot"></span> <strong>Python</strong> — Scripting &amp; AI Prototyping</li>
+            <li><span class="bullet-dot"></span> <strong>Cybersecurity &amp; Ethical Hacking</strong> — Vulnerability assessment &amp; pen-testing</li>
+            <li><span class="bullet-dot"></span> <strong>Linux Fundamentals &amp; Terminal</strong> — TryHackMe Terminaled Badge</li>
+            <li><span class="bullet-dot"></span> <strong>Web Stack</strong> — HTML5, CSS3, JavaScript (ES6+), React.js</li>
+            <li><span class="bullet-dot"></span> <strong>IoT &amp; Hardware</strong> — ESP32 Microcontrollers &amp; Ultrasonic Sensors</li>
+            <li><span class="bullet-dot"></span> <strong>Cloud &amp; Database</strong> — AWS Lambda, S3, DynamoDB, MongoDB</li>
+            <li><span class="bullet-dot"></span> <strong>Digital Marketing &amp; SEO</strong> — Certified by Reliance Skilling Academy</li>
+          </ul>
+        </article>
+
+        <!-- 2. Ordered List (ol) for Academic & Skill Progression -->
+        <article class="skill-card">
+          <div class="card-icon">&#128640;</div>
+          <h3>Learning Path &amp; Milestones</h3>
+          <p class="card-desc">Structured progression through engineering domains:</p>
+          <ol class="styled-ol">
+            <li><strong>Web Technology &amp; Software Foundations:</strong> Mastering standards-compliant HTML5, CSS3 Grid/Flexbox, and asynchronous DOM manipulation.</li>
+            <li><strong>Cyber Security &amp; Network Assessment:</strong> Hands-on threat modeling, OWASP Top 10 mitigation, and TryHackMe security labs.</li>
+            <li><strong>Cloud &amp; IoT Systems Integration:</strong> Interfacing microcontrollers (ESP32) with AWS cloud serverless pipelines.</li>
+            <li><strong>Risk-Adaptive Security Frameworks:</strong> Researching SDN-assisted threat detection for software-defined IoT environments (SENTRY-IoT).</li>
+          </ol>
+        </article>
+
+        <!-- 3. Description List (dl) for Core Competencies & Proficiencies -->
+        <article class="skill-card">
+          <div class="card-icon">&#128161;</div>
+          <h3>Core Competencies</h3>
+          <p class="card-desc">Skill-proficiency pairs and interpersonal capabilities:</p>
+          <dl class="styled-dl">
+            <dt>Ethical Hacking &amp; Assessment</dt>
+            <dd>Practical vulnerability scanning, web security fundamentals, and risk identification.</dd>
+            
+            <dt>Problem Solving &amp; Mathematics</dt>
+            <dd>Analytical thinking, algorithmic problem formulation, and structured debugging.</dd>
+            
+            <dt>Team Leadership &amp; Coordination</dt>
+            <dd>Registration committee lead for Crossroads 2025 and active NSS community service volunteer.</dd>
+            
+            <dt>Professional Communication</dt>
+            <dd>Active listening, technical documentation, and certified professional networking.</dd>
+          </dl>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Projects Section (Rendered dynamically via DOM) -->
+    <section id="projects" class="content-section">
+      <div class="section-header">
+        <span class="section-subtitle">Showcase</span>
+        <h2>Featured Projects</h2>
+        <p class="section-note">Cards rendered dynamically from a JavaScript array of objects using modern DOM manipulation.</p>
+      </div>
+
+      <!-- Controls: Category Filter & Live Search -->
+      <div class="project-toolbar">
+        <div class="filter-group">
+          <button class="filter-chip active" data-category="all">All Projects</button>
+          <button class="filter-chip" data-category="Cybersecurity">Cybersecurity &amp; SDN</button>
+          <button class="filter-chip" data-category="IoT">IoT &amp; Cloud</button>
+          <button class="filter-chip" data-category="Web">Web Platforms</button>
+        </div>
+
+        <div class="search-box">
+          <input type="text" id="project-search" placeholder="Search projects by name or tech..." aria-label="Search Projects">
+          <span class="search-icon">&#128269;</span>
+        </div>
+      </div>
+
+      <!-- Saved favorites count counter -->
+      <div class="favorites-bar">
+        <span id="favorites-count-label">⭐ Bookmarked Projects: <strong id="fav-count">0</strong></span>
+        <button id="show-favorites-btn" class="text-btn">Toggle Bookmarks View</button>
+      </div>
+
+      <!-- Dynamic Projects Grid Container -->
+      <div id="projects-grid" class="projects-grid">
+        <!-- Rendered via js/script.js -->
+      </div>
+    </section>
+
+    <!-- Education & Internship Section (Tables) -->
+    <section id="experience" class="content-section">
+      <div class="section-header">
+        <span class="section-subtitle">Academic &amp; Professional Background</span>
+        <h2>Education &amp; Internship History</h2>
+      </div>
+
+      <div class="tables-container">
+        
+        <!-- Education Table -->
+        <div class="table-wrapper">
+          <h3 class="table-title">Academic Qualifications</h3>
+          <table class="styled-table" aria-label="Education History Table">
+            <caption>Formal Educational Record</caption>
+            <thead>
+              <tr>
+                <th scope="col">Institution</th>
+                <th scope="col">Degree / Certificate</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Grade / Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Mar Baselios College of Engineering and Technology (Autonomous)</strong></td>
+                <td>B.Tech in Computer Science &amp; Engineering</td>
+                <td>2023 &ndash; 2027</td>
+                <td><span class="grade-badge">6.83 / 10 CGPA</span></td>
+              </tr>
+              <tr>
+                <td><strong>Christ Nagar English Higher Secondary School, Kowdiar</strong></td>
+                <td>12th Standard (KBHSE)</td>
+                <td>2021 &ndash; 2023</td>
+                <td><span class="grade-badge">92.50 %</span></td>
+              </tr>
+              <tr>
+                <td><strong>Christ Nagar Senior Secondary School, Thiruvallom</strong></td>
+                <td>10th Standard (CBSE)</td>
+                <td>2019 &ndash; 2021</td>
+                <td><span class="grade-badge">88.00 %</span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Primary focus: Cybersecurity, Software Systems, and Distributed Computing.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Internship Table -->
+        <div class="table-wrapper">
+          <h3 class="table-title">Internship Experience</h3>
+          <table class="styled-table" aria-label="Internship History Table">
+            <caption>Industry Internship Summary</caption>
+            <thead>
+              <tr>
+                <th scope="col">Organization</th>
+                <th scope="col">Role</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Key Learnings &amp; Responsibilities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>SRAI Smart Solutions Pvt Ltd</strong></td>
+                <td>Cyber Security Intern</td>
+                <td>16 Jun, 2025 &ndash; 29 Jun, 2025 (2 Weeks)</td>
+                <td>
+                  Gained practical exposure to cybersecurity fundamentals, ethical hacking methodologies, network security assessments, and web application vulnerability analysis. Enhanced analytical and problem-solving skills in penetration testing workflows.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Semantic Aside: Certifications, Badges & Activities -->
+    <aside id="certifications" class="content-section aside-section">
+      <div class="section-header">
+        <span class="section-subtitle">Verified Credentials</span>
+        <h2>Certifications &amp; Leadership</h2>
+      </div>
+
+      <div class="aside-grid">
+        <article class="cert-card">
+          <div class="cert-header">
+            <h4>AWS Academy Graduate</h4>
+            <span class="cert-provider">AWS Academy</span>
+          </div>
+          <p>Generative AI Foundations &ndash; Acquired knowledge of generative models, cloud-based AI applications, and foundational infrastructure.</p>
+          <span class="cert-score">Score: 100 / 100</span>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-header">
+            <h4>TryHackMe Terminaled Badge</h4>
+            <span class="cert-provider">TryHackMe</span>
+          </div>
+          <p>Demonstrated competency in Linux fundamentals, terminal commands, and command-line security exercises.</p>
+          <a href="https://tryhackme.com/p/Vivekhemand" target="_blank" rel="noopener noreferrer" class="link-inline">View TryHackMe Profile &rarr;</a>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-header">
+            <h4>Python &amp; AI Bootcamp</h4>
+            <span class="cert-provider">DevTown / GDSC</span>
+          </div>
+          <p>7-day intensive bootcamp on Python programming, algorithmic data processing, and machine learning foundations.</p>
+          <span class="cert-score">Score: 80 / 100</span>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-header">
+            <h4>Positions of Responsibility</h4>
+            <span class="cert-provider">MBCET Leadership</span>
+          </div>
+          <p>Registration Team Member for <em>Crossroads 2025</em> College Fest &amp; Active NSS Community Service Volunteer.</p>
+        </article>
+      </div>
+    </aside>
+
+    <!-- Contact Me Section with Regex Validation -->
+    <section id="contact" class="content-section">
+      <div class="section-header">
+        <span class="section-subtitle">Let's Connect</span>
+        <h2>Contact Me</h2>
+        <p class="section-note">Feel free to reach out for project collaborations, internship inquiries, or professional opportunities.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Direct Contact Details -->
+        <article class="contact-info-card">
+          <h3>Direct Reach</h3>
+          <p>You can contact me directly via telephone or email:</p>
+          
+          <div class="contact-link-row">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <span class="contact-label">College Email:</span>
+              <a href="mailto:vivekh.b23cs1263@mbcet.ac.in" class="contact-val">vivekh.b23cs1263@mbcet.ac.in</a>
+            </div>
+          </div>
+
+          <div class="contact-link-row">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <span class="contact-label">Personal Email:</span>
+              <a href="mailto:vivekhemand@gmail.com" class="contact-val">vivekhemand@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-link-row">
+            <div class="contact-icon">&#9742;</div>
+            <div>
+              <span class="contact-label">Mobile:</span>
+              <a href="tel:+919539550610" class="contact-val">+91 95395 50610</a>
+            </div>
+          </div>
+
+          <div class="resume-box">
+            <p>Looking for my complete curriculum vitae?</p>
+            <a href="resume.pdf" download class="btn btn-primary btn-block">
+              Download Full Resume (PDF)
+            </a>
+          </div>
+        </article>
+
+        <!-- Interactive Contact Form with Regex Validation -->
+        <article class="contact-form-container">
+          <h3>Send a Direct Message</h3>
+          <form id="contact-form" class="contact-form" novalidate>
+            
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="contact-name">Full Name <span class="req">*</span></label>
+              <input type="text" id="contact-name" name="name" placeholder="e.g. Vivek H" required>
+              <span class="validation-message" id="name-feedback"></span>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+              <label for="contact-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="contact-email" name="email" placeholder="e.g. recruiter@company.com" required>
+              <span class="validation-message" id="email-feedback"></span>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label for="contact-phone">Phone Number (10 digits) <span class="req">*</span></label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="e.g. 9539550610" required>
+              <span class="validation-message" id="phone-feedback"></span>
+            </div>
+
+            <!-- Message Body -->
+            <div class="form-group">
+              <label for="contact-message">Message <span class="req">*</span></label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Write your message here (min. 10 characters)..." required></textarea>
+              <span class="validation-message" id="message-feedback"></span>
+            </div>
+
+            <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+              <span>Send Message</span> &rarr;
+            </button>
+
+            <!-- Inline Form Submission Alert -->
+            <div id="form-alert" class="form-alert" role="alert" style="display: none;"></div>
+          </form>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Project Details Lightbox Modal (DOM Feature) -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      <div id="modal-body">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed Scroll-To-Top Button -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll back to top" title="Back to Top">
+    &uarr;
+  </button>
+
+  <!-- Semantic Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><strong>Vivek H</strong> &bull; B.Tech Computer Science &amp; Engineering</p>
+        <p>Mar Baselios College of Engineering and Technology, Thiruvananthapuram</p>
+      </div>
+      
+      <div class="footer-socials">
+        <a href="https://github.com/VIveK23434" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/vivek-h-87a626291/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://tryhackme.com/p/Vivekhemand" target="_blank" rel="noopener noreferrer">TryHackMe</a>
+        <a href="mailto:vivekh.b23cs1263@mbcet.ac.in">Email</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vivek H (Roll No: 63). Built with Semantic HTML5, CSS3 Grid/Flexbox, &amp; Vanilla ES6+ JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
